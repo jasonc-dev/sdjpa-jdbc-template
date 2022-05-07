@@ -1,10 +1,12 @@
 package jason.springframework.jdbc.dao;
 
 import jason.springframework.jdbc.domain.Author;
+import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
 
 @Component
 public class AuthorDaoImpl implements AuthorDao {
+
     @Override
     public Author getById(Long id) {
         return null;
@@ -28,5 +30,9 @@ public class AuthorDaoImpl implements AuthorDao {
     @Override
     public void deleteAuthorById(Long id) {
 
+    }
+
+    private RowMapper<Author> getRowMapper() {
+        return new AuthorMapper();
     }
 }
