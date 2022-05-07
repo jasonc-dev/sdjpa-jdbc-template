@@ -1,5 +1,6 @@
 package jason.springframework.jdbc.dao;
 
+import jason.springframework.jdbc.dao.mappers.AuthorMapper;
 import jason.springframework.jdbc.domain.Author;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

@@ -1,4 +1,4 @@
-package jason.springframework.jdbc.dao;
+package jason.springframework.jdbc.dao.mappers;
 
 import jason.springframework.jdbc.domain.Author;
 import org.springframework.jdbc.core.RowMapper;
